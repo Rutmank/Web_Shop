@@ -40,6 +40,8 @@ namespace Web_Shop
                 app.UseHsts();
             }
 
+
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

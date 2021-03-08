@@ -13,7 +13,7 @@ namespace Web_Shop.Data.Models
 
         public string description { set; get; } // Поле описания
 
-       // public int id { set; get; }
+        public List<Product> products { set; get; } // Указание, какие именно товары входят в данную категорию
 
     }
 }

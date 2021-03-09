@@ -9,13 +9,15 @@ namespace Web_Shop.Data.Mocks
 {
     public class MockProducts : IAllProducts
     {
+
+        private readonly IProductCategory _categoryProducts = new MockCategory(); //Переменная позволяет указывать, к какой категории принадлежит товар
         public IEnumerable<Product> Products
         {
             get
             {
                 return new List<Product>
                 {
-                    new Product{name="Milk Valio", shortDesc="", longDesc="", img="", price = 1.25, isFavourite = true, available = true}
+                    new Product{name="Milk Valio", shortDesc="", longDesc="", img="", price = 1.25, isFavourite = true, available = true, Category = _categoryProducts.AllCategories.First()}
                 };
             }
         }

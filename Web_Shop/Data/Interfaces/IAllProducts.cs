@@ -13,5 +13,7 @@ namespace Web_Shop.Data.Interfaces
 
         IEnumerable<Product> getFavouriteProducts { get; set; } // Получает и возвращает избранные продукты
 
+        Product getObjectProduct(int productID); // Возвращает номер продукта на основе класса продуктов
+
     }
 }

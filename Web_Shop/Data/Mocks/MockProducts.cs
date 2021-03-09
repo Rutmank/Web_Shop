@@ -17,7 +17,16 @@ namespace Web_Shop.Data.Mocks
             {
                 return new List<Product>
                 {
-                    new Product{name="Milk Valio", shortDesc="", longDesc="", img="", price = 1.25, isFavourite = true, available = true, Category = _categoryProducts.AllCategories.First()}
+                    new Product{
+                        name="Milk Valio", 
+                        shortDesc="", 
+                        longDesc="", 
+                        img="", 
+                        price = 1.25, 
+                        isFavourite = true, 
+                        available = true, 
+                        Category = _categoryProducts.AllCategories.First()
+                    },
                 };
             }
         }

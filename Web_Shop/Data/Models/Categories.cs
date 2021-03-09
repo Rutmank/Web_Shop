@@ -9,7 +9,7 @@ namespace Web_Shop.Data.Models
     {
         public int id { set; get; } // Поле id
 
-        public string categoryName { set; get; } // Поле имения
+        public string categoryName { set; get; } // Поле имени
 
         public string description { set; get; } // Поле описания
 

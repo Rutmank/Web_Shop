@@ -7,7 +7,7 @@ using Web_Shop.Data.Models;
 
 namespace Web_Shop.Data.Mocks
 {
-    public class MockCategory : IProductCategory // Данный класс реалезует созданный интерфейс
+    public class MockCategory : IProductCategory // Данный класс реалезует созданный интерфейс в виде категорий
     {
         public IEnumerable<Categories> AllCategories
         { // Реализация интерефейса

@@ -19,7 +19,7 @@ namespace Web_Shop.Data.Models
 
         public ushort price { set; get; } // Цена товара. ushort - потому что цена всегда положительная
 
-        public bool isFacourite { set; get; } // Указание товара на главную страницу
+        public bool isFavourite { set; get; } // Указание товара на главную страницу
 
         public int availlable { set; get; } // Количество товара 
 

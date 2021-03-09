@@ -9,7 +9,7 @@ namespace Web_Shop.Data.Interfaces
     interface IAllProducts
     {
 
-        IEnumerable<Product> Products { get; set; } // Получает и возвращает список продуктов 
+        IEnumerable<Product> Products { get; } // Получает и возвращает список продуктов 
 
         IEnumerable<Product> getFavouriteProducts { get; set; } // Получает и возвращает избранные продукты
 

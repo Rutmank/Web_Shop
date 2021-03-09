@@ -7,7 +7,7 @@ using Web_Shop.Data.Models;
 
 namespace Web_Shop.Data.Mocks
 {
-    public class MockProducts : IAllProducts
+    public class MockProducts : IAllProducts // Реализует интерфейс в виде конкретного продукта
     {
 
         private readonly IProductCategory _categoryProducts = new MockCategory(); //Переменная позволяет указывать, к какой категории принадлежит товар

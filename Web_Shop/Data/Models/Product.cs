@@ -17,11 +17,11 @@ namespace Web_Shop.Data.Models
 
         public string img { set; get; } // Внутрь url изображения товара
 
-        public float price { set; get; } // Цена товара. 
+        public double price { set; get; } // Цена товара. 
 
         public bool isFavourite { set; get; } // Указание товара на главную страницу
 
-        public bool availlable { set; get; } // Доступность товара
+        public bool available { set; get; } // Доступность товара
 
         public int categoryID { set; get; } // Прикрепление товара к определенной категории 
 

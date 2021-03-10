@@ -43,7 +43,7 @@ namespace Web_Shop.Data.Mocks
                         name="Amber Cheese",
                         shortDesc="Thise Organic Thyborøn Amber Cheese",
                         longDesc="Thise Thyborøn amber cheese is made from milk from the Thyborøn area.",
-                        img="https://shop.aarongdairy.net/wp-content/uploads/2020/04/butter-100-150x150.jpg",
+                        img="https://nordicexpatshop.com/pub/media/catalog/product/cache/a75b4628650e2182ad447c229a356118/t/h/thise-ravost-250g.jpg",
                         price = 8.5,
                         isFavourite = false,
                         available = true,

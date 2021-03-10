@@ -27,6 +27,17 @@ namespace Web_Shop.Data.Mocks
                         available = true, 
                         Category = _categoryProducts.AllCategories.First()
                     },
+
+                    new Product{
+                        name="Butter",
+                        shortDesc="Butter 200gm",
+                        longDesc="Made from pure, sweet natural cream, collected from the milk of grass-fed cattle of rural Bangladesh.",
+                        img="https://shop.aarongdairy.net/wp-content/uploads/2020/04/butter-100-150x150.jpg",
+                        price = 2.1,
+                        isFavourite = true,
+                        available = false,
+                        Category = _categoryProducts.AllCategories.First()
+                    },
                 };
             }
         }

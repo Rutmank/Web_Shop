@@ -19,9 +19,9 @@ namespace Web_Shop.Data.Mocks
                 {
                     new Product{
                         name="Milk Valio", 
-                        shortDesc="", 
-                        longDesc="", 
-                        img="", 
+                        shortDesc="Cow's milk 2.5%", 
+                        longDesc="Same great milk taste packaged in a convenient size", 
+                        img="https://gazetaschk.ru/wp-content/uploads/2019/09/milk-cows.jpg", 
                         price = 1.25, 
                         isFavourite = true, 
                         available = true, 

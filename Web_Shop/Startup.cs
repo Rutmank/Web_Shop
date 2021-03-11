@@ -8,6 +8,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Web_Shop.Data.Interfaces;
+using Web_Shop.Data.Mocks;
 
 namespace Web_Shop
 {
@@ -23,6 +25,8 @@ namespace Web_Shop
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IAllProducts, MockProducts>(); // ”казываетс€, что интерфейс реализуетс€ в определенном классе
+            services.AddTransient<IProductCategory, MockCategory>();
             services.AddRazorPages();
             services.AddMvc();
         }

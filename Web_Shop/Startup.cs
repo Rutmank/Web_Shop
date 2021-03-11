@@ -40,16 +40,6 @@ namespace Web_Shop
             app.UseMvcWithDefaultRoute();
 
 
-
-
-
-
-
-
-
-
-
-
             //if (env.IsDevelopment())
             //{
             //    app.UseDeveloperExceptionPage();

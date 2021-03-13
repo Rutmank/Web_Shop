@@ -6,7 +6,7 @@ using Web_Shop.Data.Models;
 
 namespace Web_Shop.Data.Interfaces
 {
-    interface IAllProducts
+   public interface IAllProducts
     {
 
         IEnumerable<Product> Products { get; } // Получает и возвращает список продуктов 

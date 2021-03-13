@@ -6,7 +6,7 @@ using Web_Shop.Data.Models;
 
 namespace Web_Shop.Data.Interfaces
 {
-    interface IProductCategory
+    public interface IProductCategory
     {
 
         IEnumerable<Categories> AllCategories { get; } // Функция, получающая данные из раздела категорий

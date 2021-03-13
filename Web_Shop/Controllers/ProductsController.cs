@@ -12,5 +12,11 @@ namespace Web_Shop.Controllers
         private readonly IAllProducts _allProducts;
         private readonly IProductCategory _allCategories;
 
+        public ProductsController(IAllProducts iAllProducts, IProductCategory iproductCategory)
+        {
+            _allProducts = iAllProducts;
+            _allCategories = iproductCategory;
+        }
+
     }
 }

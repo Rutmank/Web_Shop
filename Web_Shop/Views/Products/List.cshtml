@@ -1,4 +1,6 @@
-﻿@{
+﻿@using Web_Shop.Data.Models
+@model IEnumerable<Product>
+@{
     Layout = null; // Основной макет. Пока 0
 }
 
@@ -10,6 +12,14 @@
     <title>List</title>
 </head>
 <body>
-
+    <h2>All products</h2>
+    @{           foreach (var product in Model) // создается переменная и перебирает модель
+            {
+            <div>
+                <h2>Product: @product.name</h2>
+                <p>Price: @product.price.ToString("c")</p> <!-- указываеься преобразование в стринг денежного формата -->
+            </div>
+            }
+    }
 </body>
 </html>

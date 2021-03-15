@@ -31,7 +31,7 @@ namespace Web_Shop
             services.AddMvc();
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        // Фиксированный кусок создания сервера и возможность редактировать 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -40,11 +40,7 @@ namespace Web_Shop
             }
 
             app.UseDeveloperExceptionPage();
-
             app.UseStatusCodePages();
-
-            app.UseStaticFiles();
-
             app.UseStaticFiles();
             app.UseRouting();
             app.UseCors();

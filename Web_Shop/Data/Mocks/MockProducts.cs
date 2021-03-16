@@ -27,7 +27,7 @@ namespace Web_Shop.Data.Mocks
                         available = true, 
                         Category = _categoryProducts.AllCategories.First()
                     },
-
+                    
                     new Product{
                         name="Butter",
                         shortDesc="Butter 200gm",
@@ -38,7 +38,7 @@ namespace Web_Shop.Data.Mocks
                         available = false,
                         Category = _categoryProducts.AllCategories.First()
                     },
-
+                    
                     new Product{
                         name="Amber Cheese",
                         shortDesc="Thise Organic Thyborøn Amber Cheese",

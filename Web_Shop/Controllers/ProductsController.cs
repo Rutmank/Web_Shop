@@ -20,6 +20,7 @@ namespace Web_Shop.Controllers
 
         public ViewResult List() // ViewResult возвращает HTML страницу. Функция возвращает список всех товаров
         {
+            ViewBag.Category = "New"; // Пример передачи данных из контроллера в представление. Можно юзать в представлении
             var products = _allProducts.Products; // Переменная наполняется данными 
             return View(products); // Переменная передается в шаблок
         }

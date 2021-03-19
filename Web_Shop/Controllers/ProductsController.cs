@@ -23,10 +23,9 @@ namespace Web_Shop.Controllers
         {
             ProductsListViewModel obj = new ProductsListViewModel(); // Объект класса 
             obj.allProducts = _allProducts.Products; // Добавлются данные в объект
+            obj.currCategory = "Products"; // Категория в данный момент
 
-
-
-            return View(); // Переменная передается в шаблок
+            return View(obj); // Объект передается в шаблок
         }
 
     }

@@ -1,6 +1,7 @@
 ﻿@using Web_Shop.Data.Models
+@using Web_Shop.ViewModels
+@model_ProductsListViewModel
 
-@model IEnumerable<Product>
 @{
     Layout = null; // Основной макет. Пока 0
 }
@@ -15,7 +16,7 @@
 <body>
     <h1>All products</h1>
     <h3>@ViewBag.Category</h3>
-    @{ foreach (var product in Model) // создается переменная и перебирает модель
+    @{ foreach (var product in Model.allProducts) // создается переменная и перебирает модель
         {
             <div>
                 <h2>Product: @product.name</h2>

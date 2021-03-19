@@ -13,7 +13,8 @@
     <title>List</title>
 </head>
 <body>
-    <h2>All products</h2>
+    <h1>All products</h1>
+    <h3>@ViewBag.Category</h3>
     @{ foreach (var product in Model) // создается переменная и перебирает модель
         {
             <div>

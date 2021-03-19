@@ -15,7 +15,7 @@
 </head>
 <body>
     <h1>All products</h1>
-    <h3>@ViewBag.Category</h3>
+    <h3>@Model.currCategory</h3>  <!-- выводится категория --> 
     @{ foreach (var product in Model.allProducts) // создается переменная и перебирает модель
         {
             <div>

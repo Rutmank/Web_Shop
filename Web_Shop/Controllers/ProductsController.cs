@@ -22,6 +22,8 @@ namespace Web_Shop.Controllers
         public ViewResult List() // ViewResult возвращает HTML страницу. Функция возвращает список всех товаров
         {
             ProductsListViewModel obj = new ProductsListViewModel(); // Объект класса 
+            obj.allProducts = _allProducts.Products; // Добавлются данные в объект
+
 
 
             return View(); // Переменная передается в шаблок

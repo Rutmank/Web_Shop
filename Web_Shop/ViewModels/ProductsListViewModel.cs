@@ -8,7 +8,7 @@ namespace Web_Shop.ViewModels
 {
     public class ProductsListViewModel
     {
-        public IEnumerable<Product> getAllProducts { get; set; } // Получает товары
+        public IEnumerable<Product> allProducts { get; set; } // Получает товары
 
         public string currCategory { get; set; } // Переменная, куда помещается категория, с которой идет работа
     }

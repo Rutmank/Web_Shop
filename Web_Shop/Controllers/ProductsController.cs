@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Web_Shop.Data.Interfaces;
+using Web_Shop.ViewModels;
 
 namespace Web_Shop.Controllers
 {
@@ -20,9 +21,10 @@ namespace Web_Shop.Controllers
 
         public ViewResult List() // ViewResult возвращает HTML страницу. Функция возвращает список всех товаров
         {
-            ViewBag.Category = "New"; // Пример передачи данных из контроллера в представление. Можно юзать в представлении
-            var products = _allProducts.Products; // Переменная наполняется данными 
-            return View(products); // Переменная передается в шаблок
+            ProductsListViewModel obj = new ProductsListViewModel(); // Объект класса 
+
+
+            return View(); // Переменная передается в шаблок
         }
 
     }

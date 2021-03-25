@@ -1,7 +1,4 @@
-﻿@using Web_Shop.Data.Models
-@using Web_Shop.ViewModels
-@model ProductsListViewModel
-
+﻿
     <h1>All products</h1>
     <h3>@Model.currCategory</h3>  <!-- выводится категория --> 
     @{ foreach (var product in Model.allProducts) // создается переменная и перебирает модель

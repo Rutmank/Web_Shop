@@ -6,14 +6,6 @@
     Layout = "_Layout"; // Основной макет  выводится в лейаут
 }
 
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>List</title>
-</head>
-<body>
     <h1>All products</h1>
     <h3>@Model.currCategory</h3>  <!-- выводится категория --> 
     @{ foreach (var product in Model.allProducts) // создается переменная и перебирает модель
@@ -24,5 +16,3 @@
             </div>
         }
     }
-</body>
-</html>

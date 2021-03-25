@@ -2,10 +2,6 @@
 @using Web_Shop.ViewModels
 @model ProductsListViewModel
 
-@{
-    Layout = "_Layout"; // Основной макет  выводится в лейаут
-}
-
     <h1>All products</h1>
     <h3>@Model.currCategory</h3>  <!-- выводится категория --> 
     @{ foreach (var product in Model.allProducts) // создается переменная и перебирает модель
